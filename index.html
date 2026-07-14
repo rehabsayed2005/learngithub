@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <title>website News</title>
+ 
+</head>
+
+<body><table border="1">
+    <caption>table of employee</caption>
+    <!--one row with 3column-->
+    <thead bgcolor="yellow">
+        <tr>
+            <th>name </th>
+            <th>age</th>
+            <th>salary</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>rehab </td>
+            <td>20</td>
+            <td rowspan="2">3000</td>
+        </tr>
+
+        <tr>
+            <td>eman </td>
+            <td>20</td>
+
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>total</td>
+            <td colspan="2"> 6000</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+<ul>
+    <li>rehab</li>
+    <li>omar</li>
+    <li>rehab</li>
+
+</ul>
+<ol type="a" start="b">
+    <li>c#</li>
+    <li>j.s</li>
+    <li>java</li>
+</ol>
+
+<dl>
+    <dt>iphone</dt>
+    <dd>this is a uniqe phone</dd>
+    <dt>apple</dt>
+    <dd>this is a uniqe phone</dd>
+</dl>
+<!--container for each part of page-->
+
+<div>
+    <header>
+
+    </header>
+    <section>
+    </section>
+    <footer></footer>
+</div>form action="" method="post">
+<fieldset> <!--to border the form-->
+    <legend>entry data</legend> <!--to give a name to the form-->
+    <div>
+        <lable for="txt">username</lable>
+
+        <input id="txt" type="text" placeholder="yourname" required name="username">
+    </div>
+
+    <div>
+
+        <lable for="pass">password</lable>
+
+        <input id="pass" type="password" required name="password">
+    </div>
+
+    <input type="submit" value="ok">
+
+    <lable for="colour">colour</lable>
+    <input id="colour" type="color">
+    <br> <br>
+
+    <lable for="file">file</lable>
+    <input id="file" type="file">
+    <br><br>
+    <lable for="range">range</lable>
+    <input id="range" type="range" min="5" max="10" step="1" value="2">
+    <br><br>
+    <lable for="search"> search</lable>
+    <input id="search" type="search">
+    <br><br>
+    <lable for="url">url</lable>
+    <input id="url" type="url">
+    <lable for="hid">hidden</lable>
+    <input id="hid" type="hidden">\<br><br>
+
+    <lable for="datetimelocal">datetimelocal</lable>
+    <input id="datatimelocal" type="datetime-local">
+
+    <br>
+    <h2>what is your favourite language ?</h2>
+
+    <div>
+        <input id="h" type="radio" value="html" name="1">
+        <label for="h">html</label>
+    </div>
+    <!--value that is itis send to backend-->
+    <div>
+        <input id="css" type="radio" value="css" name="1">
+        <label for="css">css</label>
+    </div>
+    <div>
+        <input id="j.s" type="radio" value="javascript" name="1">
+        <label for="j.s">javascript</label>
+    </div>
+    <input type="submit">
+    <div>
+
+        <input id="h" type="checkbox" value="html" name="1">
+        <label for="h">html</label>
+    </div>
+    <!--value that is itis send to backend-->
+    <div>
+        <input id="css" type="checkbox" value="css" name="1">
+        <label for="css">css</label>
+    </div>
+    <div>
+        <!--checked this is an attribute that checked temporry when user reload the pqge -->
+        <input checked id="j.s" type="checkbox" value="javascript" name="1">
+        <label for="j.s">javascript</label>
+    </div>
+    <input type="submit">
+    <br>
+    <!--select vid#22-->
+    <label for="cnt">what is your country</label>
+    <select name="country" id="cnt" multiple>
+        <optgroup label="countries">
+            <option selected value="eg">egypt</option>
+            <option value="uk">uk </option>
+            <option value="morc">moroco</option>
+        </optgroup>
+    </select>
+    <hr><br>
+
+    <!--datalist-->
+
+    <input list="language" name="lang">
+    <datalist id="language">
+        <option value="c"></option>
+        <option value="c#"></option>
+        <option value="java"></option>
+    </datalist>
+    <input type="submit">
+</fieldset>
+</form>
+
+<br>
+<!--buttons-->
+<input type="button" value="click">
+<form>
+    <input type="text" name=user placeholder="username">
+    <input type="submit" value="send">
+    <input type="reset" value="clear">
+
+</form>
+
+<!--textarea-->
+
+<form novalidate target="_blank">
+    <input type="text " maxlength="10" minlength="4" name="text" disabled>
+    <textarea required cols="10" rows="4" maxlength="15" minlength=5 name="textarea" autofocus readonly>
+
+</textarea>
+    <input type="submit">
+
+
+</form>
+<br>
+<hr>
+<br>
+<!--downloads-->
+<a download="photo" href="FB_IMG_1714605688600.jpg">download</a>
+
+</body>
+
+</html>

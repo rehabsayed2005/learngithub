@@ -1,0 +1,139 @@
+/* تنسيق عام لجسم الصفحة */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+    direction: ltr;
+    /* اتركها ltr لأن الكود مكتوب بالإنجليزية، أو غيرها لـ rtl لو أردت */
+}
+
+/* تنسيق الجدول (Table) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: center;
+}
+
+/* بديل أفضل للـ bgcolor="yellow" التقليدي في الـ HTML */
+thead {
+    background-color: #ffd54f !important;
+    color: #333;
+    font-weight: bold;
+}
+
+tfoot {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+/* تنسيق القوائم */
+ul,
+ol,
+dl {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+dd {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* تنسيق الفورم (Form & Fieldset) */
+fieldset {
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: #fff;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+legend {
+    font-weight: bold;
+    color: #007BFF;
+    padding: 0 10px;
+    font-size: 1.1rem;
+}
+
+/* تنسيق حقول الإدخال والنصوص */
+input[type="text"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="datetime-local"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* تضمن ألا تخرج الحقول عن مساحتها */
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* تنسيق أزرار الإرسال (Submit Buttons) */
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="reset"] {
+    background-color: #dc3545;
+}
+
+input[type="reset"]:hover {
+    background-color: #bd2130;
+}
+
+/* تنسيق الـ IFrames والملفات المدمجة */
+iframe,
+object,
+embed {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
