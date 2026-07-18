@@ -1,2 +1,3 @@
 #ignore all fieles that end with .txt
-*.txt
+*.log
+!vip.log
